@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\HarishKumarMahto\\Music\\BankingDigitalWallet\\BankingDigitalWallet.csproj": {}
+    "C:\\Users\\AshazAkram\\Projects\\Banking_and_Digital_Wallet_Transaction_Processing_System\\BankingDigitalWallet.csproj": {}
   },
   "projects": {
-    "C:\\Users\\HarishKumarMahto\\Music\\BankingDigitalWallet\\BankingDigitalWallet.csproj": {
+    "C:\\Users\\AshazAkram\\Projects\\Banking_and_Digital_Wallet_Transaction_Processing_System\\BankingDigitalWallet.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HarishKumarMahto\\Music\\BankingDigitalWallet\\BankingDigitalWallet.csproj",
+        "projectUniqueName": "C:\\Users\\AshazAkram\\Projects\\Banking_and_Digital_Wallet_Transaction_Processing_System\\BankingDigitalWallet.csproj",
         "projectName": "BankingDigitalWallet",
-        "projectPath": "C:\\Users\\HarishKumarMahto\\Music\\BankingDigitalWallet\\BankingDigitalWallet.csproj",
-        "packagesPath": "C:\\Users\\HarishKumarMahto\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HarishKumarMahto\\Music\\BankingDigitalWallet\\obj\\",
+        "projectPath": "C:\\Users\\AshazAkram\\Projects\\Banking_and_Digital_Wallet_Transaction_Processing_System\\BankingDigitalWallet.csproj",
+        "packagesPath": "C:\\Users\\AshazAkram\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\AshazAkram\\Projects\\Banking_and_Digital_Wallet_Transaction_Processing_System\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\HarishKumarMahto\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\AshazAkram\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
