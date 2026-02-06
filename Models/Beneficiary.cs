@@ -1,13 +1,17 @@
-public class Beneficiary
+using System;
+
+namespace BankingDigitalWallet.Api.Models
 {
-    public Guid Id { get; set; }
+    public class Beneficiary
+    {
+        public Guid Id { get; set; }
 
-    public Guid UserId { get; set; }
-    public string Name { get; set; } = default!;
-    public string BankAccount { get; set; } = default!;
+        public Guid UserId { get; set; }
+        public string Name { get; set; } = default!;
+        public string BankAccount { get; set; } = default!;
 
-    public DateTime CreatedAt { get; set; }
+        public DateTime CreatedAt { get; set; }
 
-    // Navigation Properties
-    public User? User { get; set; }
+        public User? User { get; set; }
+    }
 }

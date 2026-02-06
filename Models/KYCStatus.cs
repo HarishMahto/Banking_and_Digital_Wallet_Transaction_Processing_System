@@ -1,8 +1,12 @@
-public class KYCStatus
-{
-    public int Id { get; set; }
-    public string Name { get; set; } = default!;
+using System.Collections.Generic;
 
-    // Navigation Properties
-    public ICollection<KYCRequest>? KYCRequests { get; set; }
+namespace BankingDigitalWallet.Api.Models
+{
+    public class KYCStatus
+    {
+        public int Id { get; set; }
+        public string Name { get; set; } = default!;
+
+        public ICollection<KYCRequest>? KYCRequests { get; set; }
+    }
 }

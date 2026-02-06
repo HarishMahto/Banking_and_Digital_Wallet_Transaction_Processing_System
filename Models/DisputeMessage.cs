@@ -1,12 +1,16 @@
-public class DisputeMessage
+using System;
+
+namespace BankingDigitalWallet.Api.Models
 {
-    public Guid Id { get; set; }
+    public class DisputeMessage
+    {
+        public Guid Id { get; set; }
 
-    public Guid DisputeId { get; set; }
-    public string Message { get; set; } = default!;
+        public Guid DisputeId { get; set; }
+        public string Message { get; set; } = default!;
 
-    public DateTime CreatedAt { get; set; }
+        public DateTime CreatedAt { get; set; }
 
-    // Navigation Properties
-    public Dispute? Dispute { get; set; }
+        public Dispute? Dispute { get; set; }
+    }
 }

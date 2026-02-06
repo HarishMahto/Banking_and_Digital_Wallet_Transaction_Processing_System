@@ -1,15 +1,23 @@
-using BankingDigitalWallet.Api.Models;
+using System;
+using System.Collections.Generic;
 
-public class Wallet
+namespace BankingDigitalWallet.Api.Models
 {
-    public Guid Id { get; set; }
+    public class Wallet
+    {
+        public Guid Id { get; set; }
 
-    public Guid UserId { get; set; }
-    public bool IsActive { get; set; }
+        public Guid UserId { get; set; }
 
-    // Navigation Properties
-    public User? User { get; set; }
-    public ICollection<WalletBalance>? WalletBalances { get; set; }
-    public ICollection<Transaction>? Transactions { get; set; }
-    public ICollection<LedgerEntry>? LedgerEntries { get; set; }
+        public DateTime CreatedAt { get; set; }
+
+        // Navigation Properties
+        public User? User { get; set; }
+
+        public ICollection<Transaction>? Transactions { get; set; }
+
+        public ICollection<WalletBalance>? WalletBalances { get; set; }
+
+        public ICollection<LedgerEntry>? LedgerEntries { get; set; }
+    }
 }

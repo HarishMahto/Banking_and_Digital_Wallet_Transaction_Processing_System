@@ -1,9 +1,18 @@
-public class Reversal
+using System;
+
+namespace BankingDigitalWallet.Api.Models
 {
-    public Guid Id { get; set; }
+    public class Reversal
+    {
+        public Guid Id { get; set; }
 
-    public Guid OriginalTransactionId { get; set; }
-    public Guid ReversalTransactionId { get; set; }
+        public Guid OriginalTransactionId { get; set; }
+        public Guid ReversalTransactionId { get; set; }
 
-    public DateTime CreatedAt { get; set; }
+        public DateTime CreatedAt { get; set; }
+
+        // Navigation Properties
+        public Transaction? OriginalTransaction { get; set; }
+        public Transaction? ReversalTransaction { get; set; }
+    }
 }

@@ -1,15 +1,18 @@
-using BankingDigitalWallet.Api.Models;
+using System;
 
-public class WalletBalance
+namespace BankingDigitalWallet.Api.Models
 {
-    public Guid Id { get; set; }
+    public class WalletBalance
+    {
+        public Guid Id { get; set; }
 
-    public Guid WalletId { get; set; }
-    public string CurrencyCode { get; set; } = default!;
-    public decimal Balance { get; set; }
-    public DateTime LastUpdatedAt { get; set; }
+        public Guid WalletId { get; set; }
+        public string CurrencyCode { get; set; } = default!;
+        public decimal Balance { get; set; }
+        public DateTime LastUpdatedAt { get; set; }
 
-    // Navigation Properties
-    public Wallet? Wallet { get; set; }
-    public Currency? Currency { get; set; }
+        // Navigation Properties
+        public Wallet? Wallet { get; set; }
+        public Currency? Currency { get; set; }
+    }
 }

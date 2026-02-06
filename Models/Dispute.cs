@@ -1,13 +1,18 @@
-public class Dispute
+using System;
+using System.Collections.Generic;
+
+namespace BankingDigitalWallet.Api.Models
 {
-    public Guid Id { get; set; }
+    public class Dispute
+    {
+        public Guid Id { get; set; }
 
-    public Guid TransactionId { get; set; }
-    public string Reason { get; set; } = default!;
+        public Guid TransactionId { get; set; }
+        public string Reason { get; set; } = default!;
 
-    public DateTime CreatedAt { get; set; }
+        public DateTime CreatedAt { get; set; }
 
-    // Navigation Properties
-    public Transaction? Transaction { get; set; }
-    public ICollection<DisputeMessage>? Messages { get; set; }
+        public Transaction? Transaction { get; set; }
+        public ICollection<DisputeMessage>? Messages { get; set; }
+    }
 }
